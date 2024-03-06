@@ -13,6 +13,7 @@ function App() {
   const createRecipe = (newRecipe) => {
     setRecipes((currentRecipes) => [...currentRecipes, newRecipe])
   }
+  
   const deleteRecipe = (indexToDelete) => {
     setRecipes((currentRecipes) => currentRecipes.filter((blank, index) => index !== indexToDelete))
   }

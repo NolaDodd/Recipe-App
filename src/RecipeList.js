@@ -6,10 +6,8 @@ import RecipeView from "./RecipeView"
 
 function RecipeList({recipes, deleteRecipe}) {
   const recipePost = recipes.map((recipe, index) => (
-              <RecipeView
-                deleteRecipe={() => deleteRecipe(index)}
-                key={index}
-                recipe={recipe}
+              <RecipeView deleteRecipe={() => deleteRecipe(index)}
+                key={index} recipe={recipe}
               />
           ))
 
